@@ -170,7 +170,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec1aeb9e88125984180d59ce7bf0bd2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoStart: 1
   startTime: 0
+  minutesDisplay: {fileID: 1378925566}
+  secondsDisplay: {fileID: 512617451}
+  centiSecondsDisplay: {fileID: 634706505}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
