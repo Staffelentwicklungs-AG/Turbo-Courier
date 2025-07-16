@@ -16,13 +16,14 @@ Main focus: Physics, movement, timer system, terrain interaction.<br/>
 
 ## General
 Players explore a 3D environment in Third Person Perspective, pick up items they need to transport to another point of the map.
-It should be a fun expirience to figure out the challenges of the controls to maneuver the hoverboard with efficiency through the terrain.
+It should be a fun experience to figure out the challenges of the controls to maneuver the hoverboard with efficiency through the terrain.
 
 ## Player
 The player is a transporter, who uses hoverboard to transport items and collect their rewards, if they manage to do so in time.
 
 ### Design
 not my job
+character on hoverboard. hoverboard center is center of origin for transformation purposes
 
 ### Controls
 + W/Arrow Up - Accelerate the board forward
@@ -48,4 +49,5 @@ not my job
 
 ### PowerUps
 + TimeBoost
++ JumpBoost
 + 
