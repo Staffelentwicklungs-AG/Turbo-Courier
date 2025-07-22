@@ -1,8 +1,9 @@
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 
 /// <summary>
 /// This script controls the Player and handles Inputs, transfers these to the State Machine
+/// Think about adding requirements here
 /// </summary>
 public class PlayerController : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Camera playerCamera; // reference to camera in Player Object
     [SerializeField] private Input playerInput; // Reference to player InputSystem
     [SerializeField] private PlayerController playerController; // Reference to this Singleton
-    [SerializeField] private StateMachine playerStateMachine; // Reference the StateMachine Object
+    [SerializeField] private PlayerStateMachine playerStateMachine; // Reference the StateMachine Object
     [SerializeField] private Animator playerAnimator; // maybe better in StateMachine, Player Inputs don#t control these
     #region Properties
     // Player properties 
