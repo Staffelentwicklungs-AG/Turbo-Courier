@@ -10,7 +10,9 @@ public class PlayerStateMachine : MonoBehaviour
     /// <summary>
     /// References to connect this state machine to the player
     /// </summary>
-    private PlayerStateMachine Instance; // This object is a singleton, and is Initialized in Awake()
+    
+    // Singleton
+    public static PlayerStateMachine Instance;
 
     #region Unity Exposed Fields
     [Header("References")]
@@ -19,7 +21,7 @@ public class PlayerStateMachine : MonoBehaviour
     [SerializeField] private
     #endregion
 
-    #region Initialization#
+    #region Initialization
     void Awake()
     {
 
