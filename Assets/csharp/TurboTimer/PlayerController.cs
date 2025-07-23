@@ -7,6 +7,9 @@ using UnityEngine.InputSystem;
 /// </summary>
 public class PlayerController : MonoBehaviour
 {
+    // Singleton
+    public static PlayerController Instance;
+
     #region Unity Exposed Fields
     // References to set in Inspector for clarity, will be automated later if possible or necessary
     [Header("References")]
@@ -14,7 +17,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform playerTransform; // reference to PlayerPosition, Rigidbody will probably replace this
     [SerializeField] private Camera playerCamera; // reference to camera in Player Object
     [SerializeField] private Input playerInput; // Reference to player InputSystem
-    [SerializeField] private PlayerController playerController; // Reference to this Singleton
     [SerializeField] private PlayerStateMachine playerStateMachine; // Reference the StateMachine Object
     [SerializeField] private Animator playerAnimator; // maybe better in StateMachine, Player Inputs don#t control these
     #region Properties
